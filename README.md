@@ -10,7 +10,7 @@ I have worked on the first task Sangam.
 
 2. List of bugs 
 	1. Migrating between Pages
-3. 
+3. List of planned features that could be implemented
 	1. Commenting, liking and sharing 
 	2. Notification Feature
 	3. Personal Conversation features to enable strengthen their bonds
