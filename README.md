@@ -46,6 +46,10 @@ Web page and user login
 
 
 
+
+https://github.com/SthuthiS123/UB_SthuthiS_Recs/assets/127185339/69f60b4b-fbff-4e51-ac86-6e0c20527e05
+
+
 Search
 
 
@@ -53,7 +57,15 @@ Search
 
 
 
+https://github.com/SthuthiS123/UB_SthuthiS_Recs/assets/127185339/973da2e4-a6b8-470c-844c-a4146dc92ded
+
+
+
 Adding New Discussion Uploading Images 
 
 
+
+
+
+https://github.com/SthuthiS123/UB_SthuthiS_Recs/assets/127185339/8d963cfd-16cd-426d-84ee-4fd2a9b77dd1
 
