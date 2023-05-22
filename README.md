@@ -35,3 +35,25 @@ Open Command prompt in project directory.
 Run bundle install to install all dependencies .
 Finally give rails s to run the project.
 
+7. Vedios
+	
+
+
+Web page and user login
+
+
+
+
+
+
+Search
+
+
+
+
+
+
+Adding New Discussion Uploading Images 
+
+
+
