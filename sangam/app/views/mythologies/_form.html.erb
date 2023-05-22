@@ -1,0 +1,32 @@
+<%= form_with(model: mythology) do |form| %>
+  <% if mythology.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(mythology.errors.count, "error") %> prohibited this mythology from being saved:</h2>
+
+      <ul>
+        <% mythology.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :Title, style: "display: block" %>
+    <%= form.text_field :Title %>
+  </div>
+
+  <div>
+    <%= form.label :Subtitle, style: "display: block" %>
+    <%= form.text_field :Subtitle %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

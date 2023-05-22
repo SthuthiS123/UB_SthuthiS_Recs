@@ -1,0 +1,32 @@
+<%= form_with(model: enjoyment) do |form| %>
+  <% if enjoyment.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(enjoyment.errors.count, "error") %> prohibited this enjoyment from being saved:</h2>
+
+      <ul>
+        <% enjoyment.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :Title, style: "display: block" %>
+    <%= form.text_field :Title %>
+  </div>
+
+  <div>
+    <%= form.label :Subtitle, style: "display: block" %>
+    <%= form.text_field :Subtitle %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,37 @@
+<div id="<%= dom_id civilisation %>">
+
+<div align="center">
+  <p>
+    <strong>
+    <%= civilisation.Title %>
+    </strong>
+  </p>
+  <p>
+    <strong>
+    <%= civilisation.Subtitle %>
+  </strong>
+  </p>
+  <p>
+    <strong>
+    <%= civilisation.description %>
+  </strong>
+  </p>
+
+<div class="accordion" id="accordionExample">
+  
+  <div class="accordion-item" style="max-width:60rem">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        View the image
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <%= image_tag civilisation.avatar %>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</div>
+</div>

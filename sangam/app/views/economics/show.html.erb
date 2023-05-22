@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @economic %>
+
+<div>
+  <%= link_to "Edit", edit_economic_path(@economic), class:"btn btn-info" %> |
+  <%= link_to "Back", economics_path, class: "btn btn-info" %>
+
+  <%= button_to "Destroy", @economic, method: :delete, class: "btn btn-danger" %>
+</div>

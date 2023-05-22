@@ -1,0 +1,56 @@
+<font face="Garamond"><b><u><nav class="navbar navbar-expand-lg" style="background-color: transparent;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="https://img.favpng.com/5/15/24/diwali-diya-stock-photography-png-favpng-qyiMM9wjeM6cAJ5S7hn1mNQfk.jpg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+                <%= link_to "SANGAM", root_path, class: "nav-link active" %>
+        </li>
+        <li class="nav-item">
+                    <%= link_to "AKRITHI", root_path, class: "nav-link active" %>
+        </li>
+        <li class="nav-item">
+                    <%= link_to "ARTHA", economics_path, class: "nav-link active" %>
+        </li>
+        <li class="nav-item">
+                    <%= link_to "SHIKSHA", educations_path, class: "nav-link active" %>
+        </li>
+        <li class="nav-item">
+                    <%= link_to "VRIDDHI", civilisations_path, class: "nav-link active" %>
+        </li>
+        <li class="nav-item">
+                    <%= link_to "SANSKRITHI", enjoyments_path, class: "nav-link active" %>
+        </li>
+        <li class="nav-item">
+                    <%= link_to "ADHYATHMA", mythologies_path, class: "nav-link active" %>
+        </li>
+        <li class="nav-item">
+                    <%= link_to "OTHERS", socials_path, class: "nav-link active" %>
+        </li>
+        <% if user_signed_in? %>
+        <li class="nav-item">
+                    <%= link_to "SIGN OUT", destroy_user_session_path, data: { turbo_method: :delete }, class: "nav-link active" %>
+        </li>
+        <% else %>
+
+        <li class="nav-item">
+                    <%= link_to "GET STARTED ", new_user_session_path, class: "nav-link active" %>
+        </li>
+        <% end %>
+
+        
+        
+        
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+</u>
+</b>
+</font>
+

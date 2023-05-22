@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Akrithi</h1>
+
+<%= render 'arts/search' %>
+<div id="arts">
+  <% @arts.each do |art| %>
+    <%= render art %>
+    <p>
+      <%= link_to "View", art %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New", new_art_path %>

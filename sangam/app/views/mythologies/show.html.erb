@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @mythology %>
+
+<div>
+  <%= link_to "Edit this mythology", edit_mythology_path(@mythology) %> |
+  <%= link_to "Back to mythologies", mythologies_path %>
+
+  <%= button_to "Destroy this mythology", @mythology, method: :delete %>
+</div>

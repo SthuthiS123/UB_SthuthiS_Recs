@@ -1,0 +1,40 @@
+
+<br><br>
+<font face="Times New Roman"><strong>
+  <div align="center" style="color: darkblue;">
+<div class="card text-bg-info mb-3 col-8" style="max-width: 24rem; align-content: center;">
+    <h2 style="color: darkblue;"><strong>Sign up</strong></h2>,
+<h3>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control container-fluid", style: "max-width: 18rem;", placeholder: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password", class: "form-control container-fluid", style: "max-width: 18rem;", placeholder: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control container-fluid", style: "max-width: 18rem;", placeholder: "Retype Password" %>
+  </div>
+
+  <div class="actions">
+    <br><%= f.submit "Sign up", class: "btn btn-dark" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+</h3>
+</font>
+</strong>
+  </div>
+
+

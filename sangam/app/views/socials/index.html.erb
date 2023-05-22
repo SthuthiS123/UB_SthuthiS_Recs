@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+<% if user_signed_in? %>
+<h1>Others</h1>
+
+<div id="socials">
+  <% @socials.each do |social| %>
+    <%= render social %>
+    <p>
+      <%= link_to "Show this social", social %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New ", new_social_path %>
+<% else %>
+please login to continue
+<% end %>

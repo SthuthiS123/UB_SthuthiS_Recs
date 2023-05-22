@@ -1,0 +1,2 @@
+module EnjoymentsHelper
+end

@@ -1,0 +1,2 @@
+module CivilisationsHelper
+end

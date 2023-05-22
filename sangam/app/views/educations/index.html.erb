@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+<% if user_signed_in ? %>
+<h1>Shiksha</h1>
+
+<div id="educations">
+  <% @educations.each do |education| %>
+    <%= render education %>
+    <p>
+      <%= link_to "View", education %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New ", new_education_path %>
+<% else %>
+Please login to continue
+<% end %>

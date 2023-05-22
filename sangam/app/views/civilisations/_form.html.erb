@@ -1,0 +1,45 @@
+<%= form_with(model: civilisation) do |form| %>
+  <% if civilisation.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(civilisation.errors.count, "error") %> prohibited this civilisation from being saved:</h2>
+
+      <ul>
+        <% civilisation.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <br><strong><font face="Garamond">
+  <div align="center">
+  <div class="card text-bg-info" style="max-width: 40rem">
+  <div align="left" class="container-fluid">
+    <%= form.label :Title, style: "display: block" %> Enter a Catchy Title for your Discussion
+    <%= form.text_field :Title, class: "form-control", placeholder: "Title" %>
+  </div>
+
+  <div align="left" class="container-fluid">
+    <%= form.label :Subtitle, style: "display: block" %>
+    <%= form.text_field :Subtitle,  class: "form-control", placeholder: "Subtitle" %>
+  </div>
+
+  <div class="container-fluid" align="left">
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description, class: "form-control" %>
+  </div>
+<br>
+  <div class="container-fluid" align="left">
+   <br> <%= form.label :Image %>Add an image 
+    <%= form.file_field :avatar, class: "btn btn-light" %>
+
+  </div>
+  
+  <div>
+    <br>
+    <input type="submit" name="commit" value="Add" data-disable-with="Create Civilisation" class="btn btn-light">
+  
+  </div>
+</div>
+</div>
+</strong>
+<% end %>

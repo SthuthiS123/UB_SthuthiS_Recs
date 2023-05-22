@@ -1,0 +1,31 @@
+<%= form_with(model: economic) do |form| %>
+  <% if economic.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(economic.errors.count, "error") %> prohibited this economic from being saved:</h2>
+
+      <ul>
+        <% economic.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :Title, style: "display: block" %>
+    <%= form.text_field :Title %>
+  </div>
+
+  <div>
+    <%= form.label :Subtitle, style: "display: block" %>
+    <%= form.text_field :Subtitle %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div>
+<input type="submit" name="commit" value="Add" data-disable-with="Create Economic" class="btn btn-light">  </div>
+<% end %>

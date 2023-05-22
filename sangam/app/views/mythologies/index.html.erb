@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+<% if user_signed_in %>
+<h1>Mythologies</h1>
+
+<div id="mythologies">
+  <% @mythologies.each do |mythology| %>
+    <%= render mythology %>
+    <p>
+      <%= link_to "Show this mythology", mythology %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New mythology", new_mythology_path %>
+<% else %>
+please login to continue 
+<% end %>

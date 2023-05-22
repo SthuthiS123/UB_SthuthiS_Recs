@@ -1,0 +1,35 @@
+<font face="Times New Roman"><br><br>
+<div align="center" style="color: darkblue;"><strong>
+<div class="card text-bg-info mb-3 col-8" style="max-width: 24rem; align-content: center;">
+  <h2 style="color: darkblue;"><strong>Log in</strong></h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control container-fluid", style: "max-width: 18rem;", placeholder: "email" %><br>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "current-password", class: "form-control container-fluid", style: "max-width: 18rem;", placeholder: "current-password" %>
+  </div><br>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end %>
+<br>
+  <div class="actions">
+    <%= f.submit "Log in", class: "btn btn-dark" %>
+  </div>
+<% end %>
+<br>
+<br><%= render "devise/shared/links" %>
+
+</div>
+</div>
+</strong>
+</font>
+

@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+<% if user_signed_in? %>
+<h1><font face="Times New Roman"><strong>Artha</strong></font></h1>
+
+<div id="economics">
+  <% @economics.each do |economic| %>
+    <%= render economic %>
+    <p>
+      <%= link_to "Show this discussion", economic %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New discussion", new_economic_path %>
+<% else %>
+  Please <%= link_to "login", new_user_session_path %> to continue 
+  <% end %>

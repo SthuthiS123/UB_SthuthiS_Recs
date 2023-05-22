@@ -1,0 +1,35 @@
+<p style="color: green"><%= notice %></p>
+<% if user_signed_in? %>
+
+<font face="comic sans ms">
+<br><br><h1 style="color: blue;" class="container-fluid"><strong>VRIDDHI</strong></h1>
+<%= render 'arts/search' %><br>
+<div class="container-fluid">
+
+<table class="table table-borderless table-hover" style="background-color: transparent;>
+  
+  
+    <div id="civilisations">
+    <% @civilisations.each do |civilisation| %>
+    
+    <tr>
+      <div class="card text">
+      <td><%= civilisation.Title %></td>
+      <td><%= civilisation.Subtitle %></td>
+      <td><%= link_to "take a look", civilisation, class: "btn btn-outline-secondary" %></td>
+      </tr>
+    </div>
+      <% end %>
+    </tr>
+  </div>
+</tbody>
+</table>
+</div>
+<div class="container-fluid">
+<%= link_to "New ", new_civilisation_path, class: "btn btn-info" %>
+</div>
+
+<% else %>
+Please <%= link_to "Login", new_user_session_path %> to view the discussion 
+<% end %>
+
